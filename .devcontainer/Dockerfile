@@ -17,6 +17,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     cmake \
     ninja-build \
     pkg-config \
+    # Chrome dependencies
+    fonts-liberation \
+    libatk-bridge2.0-0 \
+    libatspi2.0-0 \
+    libgbm1 \
+    libgtk-3-0 \
+    libvulkan1 \
+    libxkbcommon0 \
+    xdg-utils \
   && rm -rf /var/lib/apt/lists/*
 
 # Install Google Chrome
